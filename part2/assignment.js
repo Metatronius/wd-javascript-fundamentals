@@ -4,13 +4,13 @@
 // Return the sum of all of the numbers in the array. For example, given
 // [1, 2, 3, 4], then return 10. If the array is empty, return 0.
 function sum(arr) {
-  // var sum = 0;
-  //
-  // for (var i = 0; i < arr.length; i++) {
-  //   sum += arr[i];
-  // }
-  //
-  // return sum;
+  var sum = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
 }
 
 // Define a function named product that takes in one argument.
@@ -19,7 +19,11 @@ function sum(arr) {
 // Return the product of all of the numbers in the array. For example, given
 // [1, 2, 3, 4], then return 24. If the array is empty, return 1.
 function product(arr) {
-  // YOUR CODE HERE
+  var product = arr[0];
+  for (var i = 1; i < arr.length; i++) {
+    product = product * arr[i];
+  }
+  return product;
 }
 
 // Define a function named concatenate that takes in one argument.
@@ -29,7 +33,10 @@ function product(arr) {
 // ['hello', 'my', 'name', 'is', 'ken'], then return 'hellomynameisken'. If the
 // array is empty, return ''.
 function concatenate(arr) {
-
+  var returnable = '';
+  for(var i = 0; i < arr.length; i++){
+    returnable += arr[i];
+  }
 }
 
 // Define a function named repeat that takes in two arguments.
